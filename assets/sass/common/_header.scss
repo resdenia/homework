@@ -1,0 +1,206 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    .main-menu{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: transparent;
+        position: relative;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        height: 80px;
+        padding: 0 50px;
+        background-color: #ffffff;
+        a.top-header-logo{
+            flex-shrink: 0;
+            display: block;
+            width: 130px;
+            height: 100%;
+            position: relative;
+        
+            &:before {
+            content: "";
+            display: block;
+            background-image: url(https://cdn.sisense.com/wp-content/uploads/spritesheet-test.png);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            height: 113px;
+            width: 635px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            @media (min-width: 992px){
+                top: calc(50% - 58px);
+                left: -254px;
+                -webkit-transform: scale(.21);
+                transform: scale(.21);
+            }
+        }
+
+    }
+    nav.menu-items {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        ul#menu-top-main-menu {
+            list-style: none;
+            margin: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 100%;
+            padding-left: 1vw;
+            &>li{
+                position: static;
+                height: 100%;
+                &:hover{
+                    .action-btn:after{
+                        opacity:0;
+                    }
+                }
+                a{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 1.3vw;
+                    position: relative;
+                    color: #000;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-decoration: none;
+                    &:after {
+                        opacity: 1;
+                        content: "";
+                        background-color: #000;
+                        position: absolute;
+                        left: 1vw;
+                        right: 1vw;
+                        bottom: 0;
+                        height: 5px;
+                        font-size: 0;
+                        line-height: 0;
+                        color: transparent;
+                        opacity: 0;
+                        -webkit-transform: skew(-40deg);
+                        transform: skew(-40deg);
+                        -webkit-transition: opacity .2s;
+                        transition: opacity .2s;
+                    }
+                }
+                &:hover {
+                    a:after{
+                        opacity:1;
+                    }
+                }
+            }
+            .action-btn{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                background: transparent!important;
+                padding-right: 0;
+                margin: initial;
+                margin-left: auto!important;
+                width: auto!important;
+                min-width: auto!important;
+                max-width: 165px;
+                a{
+                    font-size:16px;
+                    padding: 10px !important;
+                    background: #ffcb05!important;
+                    border-radius: 4px;
+                    &:hover{
+                        background-color:#f2b900!important;
+                    }
+                }
+            }
+        }
+    }
+    }
+    #nav-search {
+        position: absolute;
+        width: 65px;
+        right: 190px;
+        top: 0;
+        height: 97%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+        -webkit-transition: background-color .5s;
+        transition: background-color .5s;
+        z-index: 10;
+        .btn-open-search {
+            position: absolute;
+            left: calc(100% - 60px);
+            top: 0;
+            border: none;
+            width: 60px;
+            height: 100%;
+            -webkit-transition: none;
+            transition: none;
+            z-index: 1;
+            background-color: transparent;
+            .icon {
+                position: absolute;
+                width: 25px;
+                height: 22px;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                &:before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    background: transparent;
+                    top: 0;
+                    left: 0;
+                    border: 2px solid #000;
+                    border-radius: 50%;
+                }
+                &:after {
+                    content: "";
+                    width: 2px;
+                    height: 9px;
+                    display: block;
+                    position: absolute;
+                    background: #000;
+                    top: 14px;
+                    left: 20px;
+                    -webkit-transform: rotate(-50deg);
+                    transform: rotate(-50deg);
+                    border-radius: 1px;
+                }
+            }
+        }
+    }
+}

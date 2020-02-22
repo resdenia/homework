@@ -1,0 +1,137 @@
+footer {
+  background: #272727;
+  z-index: 70;
+  position: relative;
+  overflow: auto;
+  padding: 32px 8px;
+
+  .footer-links {
+    .widget-title {
+      font-family: Open Sans, sans-serif;
+      color: #ffcb05;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 300;
+      margin-top: 18px;
+    }
+    @media (min-width: 992px){
+        display: none;
+      } 
+    }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding: 0 2px;
+  }
+  .social-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  .social-footer > a {
+    display: inline-block;
+    margin: 0 4px;
+    background-size: 207px;
+    width: 50px;
+    height: 50px;
+    background-image: url("https://cdn.sisense.com/wp-content/uploads/social-sprites-v2.png");
+    background-repeat: no-repeat;
+    -webkit-transition: none;
+    transition: none;
+
+    &.bg-facebook {
+      background-position: -2px -2px;
+      &:hover {
+        background-position: -2px -53px;
+      }
+    }
+
+    &.bg-instagram {
+      background-position: -52px -2px;
+      &:hover {
+        background-position: -52px -53px;
+      }
+    }
+
+    &.bg-linkedin {
+      background-position: -104px -2px;
+      &:hover {
+        background-position: -104px -53px;
+      }
+    }
+    &.bg-twitter {
+      background-position: -155px -2px;
+      &:hover {
+        background-position: -155px -53px;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    color: #fff;
+    padding: 16vw 4vw 0;
+}
+  @media (min-width: 769px) {
+    & {
+      padding: 32px 0 0;
+    }
+    .footer-cols ul li {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      padding: 0 2px;
+    }
+    .footer-cols ul li a {
+      color: #fff;
+      line-height: 18px;
+    }
+    .footer-cols ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul[id^=menu-footer-menu] {
+        text-align: right;
+        padding: 18px 15px 18px 0;
+        li{
+            padding-top: 6px;
+            margin-left: 1.6vw;
+            width: auto; 
+            a{
+                color: #fff;
+    font-weight: 300;
+    line-height: 18px;
+            }
+        }
+        &>li.action-btn {
+            background: #ffcb05;
+            line-height: 18px;
+            height: 32px;
+            min-width: auto!important;
+            padding: 0;
+            margin: 6px 6px 6px 1.6vw;
+            a{
+                padding: 4px 8px;
+                display: block;
+                color: #000;
+                font-weight: 300;
+                 line-height: 18px;
+            }
+        }
+    }
+    .copyright {
+        float:left;
+        text-align: left;
+        padding: 24px 0 18px 30px;
+      }
+  }
+  
+}

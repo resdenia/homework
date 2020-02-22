@@ -1,0 +1,62 @@
+body{
+    font-family:'Open Sans';
+}
+h1{
+    font-size: 45px;
+    line-height: 60px;
+    font-family:'Open Sans';
+    font-weight: bold;
+    color: #ffffff;
+
+}
+.body-wrapper h2{
+    font-size:35px;
+    font-weight: bold;
+    font-family:'Open Sans';
+    color: #000000;
+    margin-top:10px;
+}
+.body-wrapper p{
+    font-family:'Open Sans';
+    color: #000000;
+}
+.body_btn_yellow {
+    background: #FFCB05;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 18px;
+    border-radius: 4px;
+    color: #000;
+    display: inline-block;
+}
+.subtitle {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+}
+.visible-lg, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-phone, .visible-sm, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block {
+    display: none!important;
+}
+.action-btn {
+    background: #ffcb05;
+    border: 1px solid transparent;
+    color: #000!important;
+    border-radius: 4px;
+    padding: 14px 18px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 260px;
+    display: inline-block;
+    margin: 18px auto;
+    text-align: center;
+    white-space: inherit;
+}
+.hidden-xs {
+    display: none;
+}
+@media (max-width: 768px){
+    body {
+        font-size: 18px !important;
+    }
+}

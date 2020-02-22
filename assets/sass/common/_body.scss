@@ -1,0 +1,134 @@
+@mixin background($imgpath, $position: 0 0, $repeat: no-repeat) {
+  background: {
+    image: url($imgpath);
+    position: $position;
+    repeat: $repeat;
+  }
+}
+.main_wrapper {
+  @include background(
+    "/wp-content/themes/wordpress-webpack/assets/images/hero-banner.png"
+  );
+  padding-top: 7%;
+  padding-bottom: 13.5%;
+  p {
+    font-size: 24px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+}
+
+.form_wrapper {
+  background-color: #ffcb05;
+  padding: 40px 100px;
+  h2 {
+    text-align: center;
+  }
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    border-left: 20px solid #ffffff;
+    left: 15px;
+  }
+  input {
+    width: 100%;
+    padding: 18px 20px;
+    margin: 15px 0px;
+    border: 0px;
+  }
+  .submit_btn {
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 18px 0px;
+    margin: 15px 0px;
+  }
+  .gdpr-notice {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+.webinar_registration_wrapper {
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  img{
+      margin-top: 40px;
+      width: 100%;
+  }
+  .date {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.join_us_wrapper {
+    margin-top: 122px;
+    .managment {
+        margin-top: 70px;
+    }
+}
+
+.meet_us_wrapper {
+    margin-top: 70px;
+    margin-bottom: 150px;
+     p {
+    font-size: 18px;
+    line-height: 30px;
+    }
+}
+
+.on_demand_wrapper {
+    margin-bottom: 150px;
+    .dots {
+        margin-bottom: 5px;
+        div{
+            background: #CBCBCB;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+    .image_wrapper {
+        box-shadow: 0px 3px 6px #0000001A;
+        padding: 0px 20px 25px 20px;
+        img {
+            width: 100%;
+        }
+        .play_btn {
+            width: 71px;
+            height: 71px;
+            position: absolute;
+            background: rgba(128, 128, 128, 0.33);
+            border-radius: 50%;
+            border: 1px solid #fff;
+            left: 43%;
+            top: 39%;
+            &:after {
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                position: absolute;
+                border-left: 20px solid #ffffff;
+                left: 40%;
+                top: 27%;
+                content: ' ';
+            }
+        }
+    }
+}
+.bottom_cta_wrapper {
+    background: #F3F3F3;
+    padding: 70px 0px;
+}
